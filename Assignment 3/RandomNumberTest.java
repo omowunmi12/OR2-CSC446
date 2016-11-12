@@ -178,5 +178,28 @@ public class RandomNumberTest
 
 
 	}
+
+	public void multCongGenerator(int x0, int a, int m)
+	{
+		int[] value = new int[m/4];
+		value[0] = x0;
+		int j =0;
+		for(j=1;j<(m/4);j++)
+		{
+			value[j] = (a * value[j-1])%m;
+			if (value[j] == value[0])
+				{
+				break;
+				}
+		}
+				
+		
+		System.out.println("Given x0= "+x0+",a= "+a+",m= "+m);
+		System.out.println("The Sequence is: " );
+		for(int i =0;i<j;i++)
+			System.out.println(value[i]);
+		
+	}
+
 }
 
