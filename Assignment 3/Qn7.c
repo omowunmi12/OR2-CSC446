@@ -8,7 +8,7 @@ int main(void){
 	double relativefreq[11];
 	double cumulative[11];
 	double exponential_theoretical[11];
-	int seed = 82332;
+	int seed = 89952;
 	srand(seed);
 	int lamda = 1;
 	int r=0,i=0,j=0,k=0;
