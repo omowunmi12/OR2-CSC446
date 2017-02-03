@@ -8,7 +8,7 @@ int main(void){
 	double relativefreq[11];
 	double cumulative[11];
 	double exponential_theoretical[11];
-	int seed = 89952;
+	int seed = 99952;
 	srand(seed);
 	int lamda = 1;
 	int r=0,i=0,j=0,k=0;
@@ -18,6 +18,8 @@ int main(void){
 		{
 		    randomnumber = (rand()/(double)(RAND_MAX));
             array[r]= (-1)*(1/lamda)*log(1-randomnumber);
+            printf("Numbers");
+            printf(" %f\n",array[r]);
             randomnumber = 0;
 		}
 	for(j=0;j<11;j++)
